@@ -7,7 +7,7 @@ const projectRoutes = require("./routes/projects");
 const dashboardRoutes = require("./routes/dashboard");
 
 const app = express();
-const port = Number(process.env.PORT) || 4000;
+const port = Number(process.env.PORT) || 8000;
 const clientOrigin = process.env.CLIENT_ORIGIN || "http://localhost:5173";
 
 app.use(
