@@ -36,8 +36,7 @@ app.use((err, _req, res, _next) => {
 connectDb()
   .then(() => {
     app.listen(port, "0.0.0.0", () => {
-      console.log(`API listening on http://localhost:${port}`);
-    });
+console.log(`API listening on port ${port}`);    });
   })
   .catch((error) => {
     console.error("Failed to connect to MongoDB", error);
