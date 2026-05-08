@@ -1,4 +1,4 @@
-require("dotenv/config");
+require("dotenv").config();
 const cors = require("cors");
 const express = require("express");
 
@@ -18,7 +18,10 @@ const allowedOrigins = [
 ];
 
 app.use(
-  cors()
+  cors({
+    origin: allowedOrigins,
+    credentials: true,
+  })
 );
 
 app.use(express.json({ limit: "1mb" }));
