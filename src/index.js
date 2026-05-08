@@ -10,7 +10,7 @@ const dashboardRoutes = require("./routes/dashboard");
 
 const app = express();
 
-const port = process.env.PORT || 8000;
+const port = process.env.PORT ;
 
 const allowedOrigins = [
   "http://localhost:5173",
